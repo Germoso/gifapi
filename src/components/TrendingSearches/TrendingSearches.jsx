@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { useTrendingSearches } from "../../hooks/useTrendingSearches"
 
 const TrendingSearches = () => {
@@ -6,14 +7,15 @@ const TrendingSearches = () => {
     return (
         <div className="">
             <h2 className="text-xl whitespace-nowrap">Trending searches</h2>
-            <div>
+            <div className="flex gap-2 flex-wrap sm:flex-col sm:gap-0">
                 {data.map((el) => (
-                    <span
-                        className="block hover:underline hover:cursor-pointer   "
+                    <Link
+                        to={`/search/${el}`}
+                        className="underline sm:block sm:hover:underline hover:cursor-pointer   "
                         key={el}
                     >
                         {el}
-                    </span>
+                    </Link>
                 ))}
             </div>
         </div>

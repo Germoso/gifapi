@@ -17,7 +17,7 @@ export const Search = ({ onSubmit }) => {
                 value={keyword}
                 onChange={handleChange}
                 placeholder="Search.."
-                className="text-black rounded-lg border-black border pl-4 sm:text-3xl"
+                className="text-black border-black pl-4 sm:text-3xl"
             />
         </form>
     )

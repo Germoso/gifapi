@@ -6,7 +6,6 @@ const TrendingSearches = React.lazy(() => import("./TrendingSearches"))
 
 const LazyTrendingSearches = () => {
     const [show, ref] = useNearScreen()
-
     return (
         <div ref={ref}>
             <Suspense fallback={<Loading />}>

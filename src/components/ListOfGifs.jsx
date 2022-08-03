@@ -5,9 +5,9 @@ import { Loading } from "./Loading"
 import { Link } from "react-router-dom"
 import { Button } from "./Button"
 
-const ListOfGifs = ({ keyword, signal }) => {
+const ListOfGifs = ({ keyword, signal, storage }) => {
     const [page, setPage] = useState(0)
-    const [data, loading] = useGif(keyword, page, signal)
+    const [data, loading] = useGif(keyword, page, signal, storage)
 
     const prev = () => {
         if (page === 0) return
@@ -20,7 +20,7 @@ const ListOfGifs = ({ keyword, signal }) => {
 
     if (loading) return <Loading styles="min-h-screen" />
     return (
-        <div className="container min-h-screen mx-auto">
+        <div className="container min-h-screen mx-auto pb-10">
             <div className="columns-2 sm:columns-3xs gap-3 p-3">
                 {data.map((el) => (
                     <Link
@@ -36,7 +36,7 @@ const ListOfGifs = ({ keyword, signal }) => {
                     </Link>
                 ))}
             </div>
-            <div className="flex mx-auto w-fit gap-2">
+            <div className="flex mx-auto w-fit gap-2 text-xl">
                 <Button text="Prev" callback={prev} />
                 <span>{page + 1}</span>
                 <Button text="Next" callback={next} />
