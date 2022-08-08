@@ -13,7 +13,7 @@ const Header = () => {
         <div className="z-50 h-fit py-4 bg-slate-300 sticky top-0 sm:px-10">
             <div className="text-slate-900 font-mono font-bold text-xl h-full container mx-auto flex flex-col gap-4 items-center justify-center sm:flex-row sm:justify-between">
                 <Link to="/" className="text-5xl">
-                    GIFAPI
+                    GIFACT
                 </Link>
                 <div className="flex grow justify-end">
                     <Link to="/lastSearch" className="hover:underline">
