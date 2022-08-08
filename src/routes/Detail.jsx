@@ -9,7 +9,7 @@ const Detail = () => {
     const { id } = useParams()
     const [gif, loading] = useGif(id)
 
-    useTitle(`${gif.title || "Loading..."} | Gifapi`)
+    useTitle(`${gif.title || "Loading..."} | GIFACTS`)
 
     if (loading) return <Loading />
     else

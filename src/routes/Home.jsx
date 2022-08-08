@@ -7,7 +7,7 @@ export const Home = () => {
     const abortController = new AbortController()
     const signal = abortController.signal
 
-    useTitle(`Gifapi`)
+    useTitle(`GIFACTS`)
 
     return (
         <div className="container mx-auto flex flex-col gap-2 sm:flex-row ">
