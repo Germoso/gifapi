@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 
 export const Search = ({ onSubmit }) => {
     const [keyword, setKeyword] = useState("")
@@ -17,7 +17,7 @@ export const Search = ({ onSubmit }) => {
                 value={keyword}
                 onChange={handleChange}
                 placeholder="Search.."
-                className="text-black border-black pl-4 sm:text-3xl"
+                className="text-black border-black pl-4 sm:text-3xl bg-neutral-800"
             />
         </form>
     )

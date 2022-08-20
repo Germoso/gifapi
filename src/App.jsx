@@ -9,7 +9,7 @@ import { GifContext } from "./context/GifsContext"
 function App() {
     return (
         <BrowserRouter>
-            <div className="font-mono min-h-screen bg-slate-900 text-slate-50">
+            <div className="font-mono min-h-screen bg-black text-slate-50">
                 <Header />
                 <GifContext>
                     <Routes>

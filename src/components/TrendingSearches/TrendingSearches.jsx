@@ -6,12 +6,12 @@ const TrendingSearches = () => {
 
     return (
         <div className="">
-            <h2 className="text-xl whitespace-nowrap">Trending searches</h2>
+            <h2 className="text-xl whitespace-nowrap text-neutral-400">Trending searches</h2>
             <div className="flex gap-2 flex-wrap sm:flex-col sm:gap-0">
                 {data.map((el) => (
                     <Link
                         to={`/search/${el}`}
-                        className="underline sm:block sm:hover:underline hover:cursor-pointer   "
+                        className="underline text-neutral-500 sm:block sm:hover:underline hover:cursor-pointer"
                         key={el}
                     >
                         {el}
